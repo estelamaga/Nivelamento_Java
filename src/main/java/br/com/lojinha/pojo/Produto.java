@@ -12,7 +12,11 @@ public class Produto {
         return this.valor;
     }
     public void  setValor(double novoValor){
-        this.valor = novoValor;
+        if (novoValor > 0){
+            this.valor = novoValor;
+        } else {
+            throw new IllegalArgumentException("Valores devem ser maiores que 0");
+        }
     }
 
     public String getNome() {
