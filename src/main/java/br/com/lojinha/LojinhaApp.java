@@ -7,11 +7,16 @@ public class LojinhaApp {
 
         Produto meuProduto = new Produto();
 
-        meuProduto.nome = "Play4";
-        meuProduto.valor = 4999.99;
-        meuProduto.marca = "Sony";
-        meuProduto.itensInclusos = "controle e 3 jogos";
-        meuProduto.tamanho = "Médio";
-        System.out.println(meuProduto.nome);
+        meuProduto.setNome("Play4");
+        meuProduto.setValor(59.90);
+        meuProduto.setMarca("Sony");
+        meuProduto.setItensInclusos("controle e 3 jogos");
+        meuProduto.setTamanho("Médio");
+        
+        System.out.println(meuProduto.getValor());
+        System.out.println(meuProduto.getMarca());
+        System.out.println(meuProduto.getNome());
+        System.out.println(meuProduto.getTamanho());
+        System.out.println(meuProduto.getItensInclusos());
     }
 }
