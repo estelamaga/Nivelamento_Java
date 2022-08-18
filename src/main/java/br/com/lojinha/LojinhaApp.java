@@ -1,5 +1,6 @@
 package br.com.lojinha;
 
+import br.com.lojinha.enums.Tamanho;
 import br.com.lojinha.pojo.Produto;
 
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ public class LojinhaApp {
         meuProduto.setNome("Play4");
         meuProduto.setValor(20.50);
         meuProduto.setMarca("Sony");
-        meuProduto.setTamanho("Médio");
+        meuProduto.setTamanho(Tamanho.Grande);
 
         List<String> itensInclusos =  new ArrayList<>();
         itensInclusos.add("2 Controles");
