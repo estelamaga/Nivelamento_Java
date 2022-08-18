@@ -11,6 +11,14 @@ public class Produto {
     private Tamanho tamanho;
     private List<String> itensInclusos;
 
+    /* Criando construtor - Modificador de acesso e nome da classe
+       Definir comando que serão iniciados durante a instanciação
+     */
+    public Produto(String novaMarca, Tamanho novoTamanho){
+        this.marca = novaMarca;
+        this.tamanho = novoTamanho;
+    }
+
     // Método
     public double getValor(){
         return this.valor;

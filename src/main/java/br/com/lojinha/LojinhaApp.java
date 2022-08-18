@@ -9,12 +9,10 @@ import java.util.List;
 public class LojinhaApp {
     public static void main(String[] args) {
 
-        Produto meuProduto = new Produto();
+        Produto meuProduto = new Produto("Nestle", Tamanho.Medio);
 
         meuProduto.setNome("Play4");
         meuProduto.setValor(20.50);
-        meuProduto.setMarca("Sony");
-        meuProduto.setTamanho(Tamanho.Grande);
 
         List<String> itensInclusos =  new ArrayList<>();
         itensInclusos.add("2 Controles");
