@@ -9,7 +9,7 @@ public class Produto {
     private String marca;
     private double valor;
     private Tamanho tamanho;
-    private List<String> itensInclusos;
+    private List<ItemIncluso> itensInclusos;
 
     /* Criando construtor - Modificador de acesso e nome da classe
        Definir comando que serão iniciados durante a instanciação
@@ -55,10 +55,10 @@ public class Produto {
         this.tamanho = novoTamanho;
     }
 
-    public List<String> getItensInclusos() {
+    public List<ItemIncluso> getItensInclusos() {
         return itensInclusos;
     }
-    public void setItensInclusos(List<String> novoItensInclusos) {
+    public void setItensInclusos(List<ItemIncluso> novoItensInclusos) {
         this.itensInclusos = novoItensInclusos;
     }
 }
