@@ -3,11 +3,15 @@ package br.com.lojinha.pojo;
 import br.com.lojinha.enums.Tamanho;
 
 import java.util.List;
-
+/*
+  Como foi utilizado polimorfismo na Classe Produto Internacional
+  Como Classe Produto Internacional extende de Produto, e a classe Produto tem um atributo protected
+  você consegue ter acesso direto.
+ */
 public class Produto {
     private String nome;
     private String marca;
-    private double valor;
+    protected double valor;
     private Tamanho tamanho;
     private List<ItemIncluso> itensInclusos;
 

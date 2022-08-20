@@ -3,6 +3,8 @@ package br.com.lojinha;
 import br.com.lojinha.enums.Tamanho;
 import br.com.lojinha.pojo.ItemIncluso;
 import br.com.lojinha.pojo.Produto;
+import br.com.lojinha.pojo.ProdutoInternacional;
+import br.com.lojinha.pojo.ProdutoNacional;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,10 +25,10 @@ public class LojinhaApp {
 
         meuProduto.setItensInclusos(itensInclusos);
 
-        System.out.println(meuProduto.getValor());
-        System.out.println(meuProduto.getMarca());
-        System.out.println(meuProduto.getNome());
-        System.out.println(meuProduto.getTamanho());
+//        System.out.println(meuProduto.getValor());
+//        System.out.println(meuProduto.getMarca());
+//        System.out.println(meuProduto.getNome());
+//        System.out.println(meuProduto.getTamanho());
 //        System.out.println(meuProduto.getItensInclusos());
 //        System.out.println(meuProduto.getItensInclusos().get(0).getNome());
 //        System.out.println(meuProduto.getItensInclusos().get(0).getQuantidade());
@@ -38,5 +40,15 @@ public class LojinhaApp {
             System.out.println(itensAtual.getNome());
             System.out.println(itensAtual.getQuantidade());
         }
+
+        ProdutoNacional meuProdutoNacional = new ProdutoNacional("Sony", Tamanho.Medio);
+        meuProdutoNacional.setImpostoNacional(0.565);
+        System.out.println(meuProdutoNacional.getImpostoNacional());
+        meuProdutoNacional.setValor(1);
+
+        ProdutoInternacional meuProdutoInternacional = new ProdutoInternacional("Sony", Tamanho.Medio);
+        meuProdutoInternacional.setImpostoInternacional(0.676);
+        System.out.println(meuProdutoInternacional.getImpostoInternacional());
+        meuProdutoInternacional.setValor(-99);
     }
 }
